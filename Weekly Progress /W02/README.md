@@ -1,9 +1,11 @@
 1. Objective
 
-Write the objective of this specific project.
+The objective of this project is to create a direct wireless control system that uses a mobile phone to turn a physical LED connected to an ESP32 microcontroller on and off.
+
 2. Components Used
 
-List all the components, tools, and materials used for this project.
+I used Sinric Pro because it can securely communicate with Google's servers.You need to install smart home hub on your phone where you link the Sinric Pro service and assign the ESP32 devices to a specific digital room. The voice user interface that captures your spoken commands, processes the natural language, and passes the action down to Sinric Pro.
+
 3. Wiring / Circuit
 
 Add your wiring/circuit diagram.
