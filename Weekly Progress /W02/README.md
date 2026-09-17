@@ -14,8 +14,9 @@ Instead of building a physical circuit with switches and breadboards, I used a s
 
 ## 4. Working Principle
 
-- Write down your understanding of how the project works.
-- Explain the working principle in your own words.
+The project operates by establishing a secure wireless network loop that links your smartphone, Google Assistant, and the ESP32 microcontroller over a shared Wi-Fi connection. The control cycle begins when you give a voice command or tap a virtual button on your phone, which is instantly captured and processed by the Sinric Pro smart home cloud platform. Sinric Pro translates this user action into a small digital data packet and beams it over the internet directly to the ESP32. Upon receiving the signal, the microcontroller's firmware immediately alters the electrical state of its onboard GPIO pin, switching the physical LED on or off without the need for any external wiring circuits.
+
+By connecting your phone, Google, and the ESP32 to the same Wi-Fi network, you create a cloud, removing the need for a physical connection. Your voice command ("Hey Google...") or a digital screen tap serves as the trigger, which is collected by Sinric Pro because it connects the ESP32 to Google Home. Sinric Pro converts your command into a piece of computer code and sends it over the internet to the exact digital address of your ESP32. The ESP32 reads that incoming code packet and turns the electrical power state of the LED from 0 volts to 3.3 volts, which causes the onboard LED to light up.
 
 ## 5. Code
 My code is in the Voice_control_using_ESP32.ino file in week 02
@@ -27,8 +28,7 @@ My code is in the Voice_control_using_ESP32.ino file in week 02
 
 ## 7. Problems Encountered & Solutions
 
-- Describe the challenges or problems you faced while building the project.
-- Explain how you solved them, if you were able to.
+One problem that I faced was that when my ESP32 is powered on and connected to the internet, the Google Home app lists the LED as "Offline." I fixed this problem by going to the Google Assistant app, navigating to your linked services, and by saying the "Sync my devices" voice command to force Google to refresh its connection with the Sinric Pro servers.
 
 ## 8. Review Video Link
 
