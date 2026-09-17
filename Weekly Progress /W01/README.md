@@ -5,12 +5,12 @@
 ---
 
 ### 1. Objective
-- Write the objective of this specific project.
+- The objective of this project is to control a robot using the blynk app on a mobile phone.
 
 ---
 
 ### 2. Components Used
-- List all the components, tools, and materials used for this project.
+I used both the blank website and app to create the datastreams and to add the buttons, switchs, and sliders to control the robots arms, shoulders, hip, and wheels.
 
 ---
 
