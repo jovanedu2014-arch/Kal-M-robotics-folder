@@ -10,7 +10,7 @@
 ---
 
 ### 2. Components Used
-I used both the blank website and app to create the datastreams and to add the buttons, switchs, and sliders to control the robots arms, shoulders, hip, and wheels.
+To build this project, I used both the Blynk website and mobile app to set up the necessary datastreams and design a dashboard featuring buttons, switches, and sliders to control the robot's arms, shoulders, hips, and wheels. I then used the Arduino IDE to program the ESP32 microcontroller, integrating the unique Blynk credentials generated during setup.Another critical component of this project is Wi-Fi. Internet connectivity is required because the Blynk app does not communicate directly with the robot; instead, they send and receive commands through a cloud-based server. When a control is adjusted on the app, the signal travels over the internet to the Blynk Cloud, which instantly routes the instruction to the ESP32’s onboard Wi-Fi module.
 
 ---
 
