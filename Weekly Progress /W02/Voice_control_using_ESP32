@@ -1,0 +1,43 @@
+#include <WiFi.h>
+#include <SinricPro.h>
+#include <SinricProSwitch.h>
+
+#define WIFI_SSID         "Jov-Fi"
+#define WIFI_PASS         "Jovsecuregate2014"
+#define APP_KEY           "4fed98b7-4a18-4200-9e58-8ecbd346d632"
+#define APP_SECRET        "571379ec-8bd7-4361-a6b7-6f763c37aace-1c3524d7-551e-4129-8cec-ed04888e863d"
+#define LED_DEVICE_ID     "6a97733a6bed5a4775225bb4"
+
+#define LED_PIN           2  // Built-in ESP32 LED (Change to your specific GPIO)
+
+// This function handles the command sent from Google Assistant via Sinric Pro
+bool onPowerState(const String &deviceId, bool &state) {
+  Serial.printf("Device %s turned %s\r\n", deviceId.c_str(), state ? "on" : "off");
+  digitalWrite(LED_PIN, state ? HIGH : LOW);
+  return true; // Handle successfully
+}
+
+void setup() {
+  Serial.begin(115200);
+  pinMode(LED_PIN, OUTPUT);
+  digitalWrite(LED_PIN, LOW); // Start with LED turned off
+
+  // Connect to Wi-Fi
+  WiFi.begin(WIFI_SSID, WIFI_PASS);
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+  Serial.println("\nWiFi Connected!");
+
+  // Setup Sinric Pro Switch
+  SinricProSwitch& mySwitch = SinricPro[LED_DEVICE_ID];
+  mySwitch.onPowerState(onPowerState); // Link the callback function
+
+  // Start SinricPro connection
+  SinricPro.begin(APP_KEY, APP_SECRET);
+}
+
+void loop() {
+  SinricPro.handle(); // Keeps the WebSocket connection alive and listens for changes
+}
