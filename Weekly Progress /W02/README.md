@@ -10,9 +10,7 @@ I used Sinric Pro because it can securely communicate with Google's servers.You 
 
 ## 3. Wiring / Circuit
 
-- Add your wiring/circuit diagram.
-- You can use **draw.io, hand drawing, circuit simulation, or any other suitable method**.
-- If a wiring/circuit diagram is not applicable, explain briefly.
+Instead of building a physical circuit with switches and breadboards, I used a software-defined link by connecting the ESP32 directly to a smartphone through Wi-Fi. By routing commands digitally through apps like Blynk, Sinric Pro, and Google Home, virtual data packets completely replace wire connections. Activating a button or voice command on the phone transmits a signal to the ESP32, allowing control of its onboard hardware without any wiring.
 
 ## 4. Working Principle
 
