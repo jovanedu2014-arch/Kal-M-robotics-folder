@@ -20,9 +20,7 @@ I used Sinric Pro because it can securely communicate with Google's servers.You 
 - Explain the working principle in your own words.
 
 ## 5. Code
-
-- Upload the `.ino` file used for the project.
-- If the project does not require code, mention **Not Applicable**.
+My code is in the Voice_control_using_ESP32.ino file in week 02
 
 ## 6. Result
 
