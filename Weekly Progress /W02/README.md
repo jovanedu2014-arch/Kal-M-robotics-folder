@@ -28,7 +28,7 @@ My code is in the Voice_control_using_ESP32.ino file in week 02
 
 ## 7. Problems Encountered & Solutions
 
-One problem that I faced was that when my ESP32 is powered on and connected to the internet, the Google Home app lists the LED as "Offline." I fixed this problem by going to the Google Assistant app, navigating to your linked services, and by saying the "Sync my devices" voice command to force Google to refresh its connection with the Sinric Pro servers.
+One problem that I faced was that when my ESP32 is powered on and connected to the internet, the Google Home app lists the LED as "Offline." I fixed this problem by going to the Google Assistant app, navigating to your linked services, and by saying the "Sync my devices" voice command to force Google to refresh its connection with the Sinric Pro servers. Another problem I faced was that Google Assistant confuses your voice command with a general internet search, or it says it doesn't understand which light you are talking about.I fixed this by giving the device a simple name inside the Sinric Pro dashboard and Google Home app. Avoid names like "ESP32_LED_01" and instead use plain human language like "The LED" so Google's natural language processing can easily identify it.
 
 ## 8. Review Video Link
 
