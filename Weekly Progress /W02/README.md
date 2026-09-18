@@ -23,8 +23,7 @@ My code is in the Voice_control_using_ESP32.ino file in week 02
 
 ## 6. Result
 
-- Share photographs or screenshots of your completed project.
-- Include the final output/result if possible.
+https://drive.google.com/file/d/1KAClYPte2DTUvOLUj1ewq0WlyGc-y5Xs/view?usp=sharing
 
 ## 7. Problems Encountered & Solutions
 
