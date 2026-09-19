@@ -32,9 +32,7 @@ My code is in the Blynk_control.ino file in week 01
 ---
 
 ### 6. Result
-- Share photographs / Recordings (As drive link) or screenshots of your completed project.
-- Include the final output/result if possible.
-  - Eg: https://drive.google.com/file/d/1t56oTDtfnhWL0OTrfkKYV429bhk_HaOQ/view?usp=sharing
+Here is the link to the recording of me testing out this project, https://drive.google.com/file/d/1Cl0t_bd9ijEQiNcXdZo_d_HX_raaWdtT/view?usp=sharing
 
 ---
 
