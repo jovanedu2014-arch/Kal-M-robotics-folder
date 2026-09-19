@@ -15,10 +15,7 @@ To build this project, I used both the Blynk website and mobile app to set up th
 ---
 
 ### 3. Wiring / Circuit
-- Add your wiring/circuit diagram.
-- You can use **draw.io, hand drawing, circuit simulation, or any other suitable method**.
-- If a wiring/circuit diagram is not applicable, explain briefly.
-
+My circuit diagram is in the file, Sample_Wiring_or_Connection_Diagram.png in W01.
 ---
 
 ### 4. Working Principle
