@@ -42,5 +42,5 @@ I faced the problem of trying to control the arm, shoulder, and hip motors. I ov
 ---
 
 ### 8. Review Video Link
-- Upload the project review/demo video to Google Drive.
-- Share the **Google Drive link** here.
+This is the review video link
+https://drive.google.com/file/d/1Qz6o5ifk2HSCaLgdyvEOzkZWmrS3kDek/view?usp=drivesdk
